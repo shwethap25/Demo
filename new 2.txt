@@ -1,0 +1,38 @@
+1. Enable Column Formatting
+Use the COLUMN command to set column widths and headings.
+
+sql
+Copy
+Edit
+COLUMN name FORMAT A20;
+COLUMN dept FORMAT A10;
+COLUMN marks FORMAT 999;
+A20 = Alphanumeric column with width 20
+999 = Number format
+
+🔹 2. Set Page and Line Size
+This prevents data from wrapping awkwardly.
+
+sql
+Copy
+Edit
+SET LINESIZE 100;
+SET PAGESIZE 50;
+LINESIZE: Number of characters per line
+
+PAGESIZE: Number of rows per page
+
+
+
+SET LINESIZE 100;
+SET PAGESIZE 50;
+COLUMN name FORMAT A20;
+COLUMN dept FORMAT A10;
+COLUMN marks FORMAT 999;
+
+
+5. To Reset Formatting
+sql
+Copy
+Edit
+CLEAR COLUMNS;
